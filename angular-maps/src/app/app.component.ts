@@ -11,8 +11,8 @@ export class AppComponent {
   title = 'server mappe';
   lat: number = 45.506738;
   lng: number =   9.190766;
-  lati: number = 45.563314;
-  lngt: number = 9.180794;
+  latitudine: number = 45.563314;
+  longitudine: number = 9.270542;
 
   latCane: number = 45.506738;
   lngCane: number = 9.190766;
