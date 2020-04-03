@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AgmCoreModule } from '@agm/core'; //importa questa libreria
+import { AgmCoreModule } from '@agm/core';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -9,8 +9,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    // Imposta qui le tue api key
-     AgmCoreModule.forRoot({apiKey: 'Milano'}),
+     AgmCoreModule.forRoot({apiKey: 'AIzaSyC-fsfM-piCvdrloo30qlqtnZyX2SgBpCg'}),
   ],
   providers: [],
   bootstrap: [AppComponent]

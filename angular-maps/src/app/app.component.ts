@@ -5,29 +5,77 @@ import { Point } from 'src/models/point.model';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
+
 })
 export class AppComponent {
-  triangle: Array<Point> =
-  [
-    {lng:9.1, lat:45.5},
-    {lng:9.0, lat:45.6},
-    {lng:9.0, lat:45.4}
-  ]
-
-
   title = 'server mappe';
-  //Aggiungiamo latitudine e longitudine di un luogo
-  lng: number = 9.1;
-  lat: number = 45.5;
-  a:number=8.1;
-  b:number=41.5;
-  icon =  {
-    url:'./assets/img/cat_acrobat.ico',
+  lat: number = 45.506738;
+  lng: number =   9.190766;
+  lati: number = 45.563314;
+  lngt: number = 9.180794;
+
+  latCane: number = 45.506738;
+  lngCane: number = 9.190766;
+
+  latTartaruga: number = 45.023845;
+  lngTartaruga: number = 9.19263;
+
+  latCoccodrillo: number = 45.023841;
+  lngCoccodrillo: number = 9.333333;
+
+   colore="yellow";
+   giallo(){
+     this.colore="yellow";
+   }
+   rosso(){
+     this.colore="red";
+   }
+   verde(){
+     this.colore="green";
+   }
+   icon =  {
+    url:'./assets/img/cane.jpg',
     scaledSize: {
       width: 60,
       height: 60
     }
   };
+ icon2 =  {
+    url:'./assets/img/tartaruga.jpg',
+    scaledSize: {
+      width: 60,
+      height: 60
+    }
+  };
+   icon3 =  {
+    url:'./assets/img/coccodrillo.jpg',
+    scaledSize: {
+      width: 60,
+      height: 60
+    }
+  };
+
+  triangle: Array<Point> =
+  [
+    {lng:9.190766, lat:45.506738},
+    {lng:9.0, lat:45.6},
+    {lng:9.0, lat:45.4}
+  ]
+  rectangle: Array<Point> =
+  [
+   {lng:9.190766, lat:45.6},
+    {lng:9.7, lat:45.6},
+    {lng:9.7, lat:45.4},
+    {lng:9.190766, lat:45.4},
+  ]
+ colore1="green";
+   giallo1(){
+     this.colore1="yellow";
+   }
+   rosso1(){
+     this.colore1="red";
+   }
+   verde1(){
+     this.colore1="green";
+   }
 }
-
-

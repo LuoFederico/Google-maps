@@ -2,17 +2,30 @@
 <!--Centriamo la mappa alle nostre coordinate-->
 <agm-map [latitude]="lat" [longitude]="lng">
   <!--Mettiamo un marker alle nostre coordinate-->
-  <agm-marker [latitude]="lat" [longitude]="lng" >
+  <agm-marker [latitude]="lat" [longitude]="lng">
   </agm-marker>
-  <agm-marker [a]="lat" [b]="lng" >
-  </agm-marker>
-   <agm-polygon [paths]="triangle" [fillColor]="'red'">
-  </agm-polygon>
-  <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="icon">
-  </agm-marker>
-  <agm-circle [latitude]="lat" [longitude]="lng"
+    <agm-circle [latitude]="lat" [longitude]="lng"
       [radius]="5000"
-      [fillColor]="'red'">
+      [fillColor]="colore">
   </agm-circle>
+    <agm-marker [latitude]="latCane" [longitude]="lngCane" [iconUrl]="icon"> </agm-marker>
+    <agm-marker [latitude]="latTartaruga" [longitude]="lngTartaruga" [iconUrl]="icon2"> </agm-marker>
+    <agm-marker [latitude]="latCoccodrillo" [longitude]="lngCoccodrillo" [iconUrl]="icon3"> </agm-marker>
 
+  <agm-marker [latitude]="lati" [longitude]="lngt">
+  </agm-marker>
+    <agm-circle [latitude]="lati" [longitude]="lngt"
+      [radius]="5000"
+      [fillColor]="colore">
+  </agm-circle>
+  <agm-polygon [paths]="triangle" [fillColor]="'red'"></agm-polygon>
+  <agm-polygon [paths]="rectangle" [fillColor]="colore1"></agm-polygon>
 </agm-map>
+<h1>Colore del cerchio</h1>
+<Input type="button" value="rosso" (click)="rosso()">
+<Input type="button" value="giallo" (click)="giallo()">
+<Input type="button" value="verde" (click)="verde()">
+<h1>Colore del rettangolo</h1>
+<Input type="button" value="rosso" (click)="rosso1()">
+<Input type="button" value="giallo" (click)="giallo1()">
+<Input type="button" value="verde" (click)="verde1()">
